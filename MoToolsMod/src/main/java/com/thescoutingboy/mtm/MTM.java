@@ -1,0 +1,12 @@
+package com.thescoutingboy.mtm;
+
+import net.minecraftforge.fml.common.Mod;
+
+import com.thescoutingboy.mtm.refstrings.RefStrings;
+
+@Mod(modid = RefStrings.MOD_ID, name = RefStrings.NAME, version = RefStrings.VERSION)
+public class MTM {
+	
+	
+
+}

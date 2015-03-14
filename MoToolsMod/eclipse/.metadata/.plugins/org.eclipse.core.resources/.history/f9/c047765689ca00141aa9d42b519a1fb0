@@ -1,0 +1,16 @@
+[
+{
+  "modid": "MTM",
+  "name": "Mo' Tools Mod",
+  "description": "A Mod That Adds New Tools!",
+  "version": "RefStrings.VERSION",
+  "mcversion": "1.8",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["TheScoutingBoy A.K.A. ScoutMC!"],
+  "credits": "TheScoutingBoy for textures and coding!",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
