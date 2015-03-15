@@ -1,0 +1,44 @@
+package com.thescoutingboy.mcm;
+
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+
+import com.thescoutingboy.mcm.init.MCM_Items;
+import com.thescoutingboy.mcm.proxy.CommonProxy;
+import com.thescoutingboy.mcm.refstrings.RefStrings;
+
+@Mod(modid = RefStrings.MOD_ID, name = RefStrings.NAME, version = RefStrings.VERSION)
+public class MCM {
+	
+	//Proxy
+	@SidedProxy(clientSide = RefStrings.CLIENT_PROXY_CLASS, serverSide = RefStrings.SERVER_PROXY_CLASS)
+	public static CommonProxy proxy;
+	
+	//EventHandlers
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent event) {
+		
+		MCM_Items.init();
+		MCM_Items.register();
+		
+	}
+	
+	@EventHandler
+	public void init(FMLInitializationEvent event) {
+		
+		proxy.registerRenders();
+		
+	}
+	
+	@EventHandler
+	public void postInit(FMLPostInitializationEvent event) {
+		
+		
+		
+	}
+
+}
