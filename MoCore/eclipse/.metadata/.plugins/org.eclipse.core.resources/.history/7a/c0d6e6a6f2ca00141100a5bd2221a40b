@@ -1,0 +1,21 @@
+package com.thescoutingboy.mcm.init;
+
+import net.minecraft.item.Item;
+
+public class MCM_Items {
+	
+	public static Item stone_stick;
+	
+	public static void init() {
+		
+		stone_stick = new Item().setUnlocalizedName("stone_stick");
+		
+	}
+
+	public static void register() {
+		
+		
+		
+	}
+
+}

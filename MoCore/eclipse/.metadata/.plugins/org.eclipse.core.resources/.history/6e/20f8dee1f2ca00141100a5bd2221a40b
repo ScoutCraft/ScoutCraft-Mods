@@ -1,0 +1,21 @@
+package com.thescoutingboy.mcm.init;
+
+import net.minecraft.item.Item;
+
+public class MCM_Items {
+	
+	public static Item infusion_item;
+	
+	public static void init() {
+		
+		infusion_item = new Item().setUnlocalizedName("infusion_item");
+		
+	}
+
+	public static void register() {
+		
+		
+		
+	}
+
+}

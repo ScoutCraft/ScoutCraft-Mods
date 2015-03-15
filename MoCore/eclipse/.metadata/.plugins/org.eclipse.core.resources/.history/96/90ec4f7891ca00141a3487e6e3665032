@@ -1,0 +1,8 @@
+package com.thescoutingboy.mc.refstrings;
+
+public class RefStrings {
+	
+	public static final String MOD_ID = "MCM";
+	public static final String NAME = "Mo' Core Mod";
+
+}

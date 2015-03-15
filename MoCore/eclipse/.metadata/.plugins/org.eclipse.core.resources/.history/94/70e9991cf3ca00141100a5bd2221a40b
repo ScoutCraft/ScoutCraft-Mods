@@ -1,0 +1,28 @@
+package com.thescoutingboy.mcm.init;
+
+import net.minecraft.item.Item;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+
+public class MCM_Items {
+	
+	public static Item infusion_item;
+	
+	public static void init() {
+		
+		infusion_item = new Item().setUnlocalizedName("infusion_item");
+		
+	}
+
+	public static void register() {
+		
+		GameRegistry.registerItem(infusion_item, infusion_item.getUnlocalizedName().substring(5));
+		
+	}
+	
+	public static void registerRenders() {
+		
+		
+		
+	}
+
+}

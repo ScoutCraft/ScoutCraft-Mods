@@ -1,0 +1,10 @@
+package com.thescoutingboy.mcm;
+
+import com.thescoutingboy.mcm.refstrings.RefStrings;
+
+import net.minecraftforge.fml.common.Mod;
+
+@Mod(modid = RefStrings.MOD_ID, name = RefStrings.NAME, version = RefStrings.VERSION)
+public class MCM {
+
+}

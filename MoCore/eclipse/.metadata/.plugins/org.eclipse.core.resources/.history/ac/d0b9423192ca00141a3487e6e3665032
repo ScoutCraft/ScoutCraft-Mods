@@ -1,0 +1,16 @@
+[
+{
+  "modid": "MCM",
+  "name": "Mo' Core Mod",
+  "description": "This is NEEDED for all 'Mo' ' Mods!",
+  "version": "0.1 A BIG Alpha!",
+  "mcversion": "1.8",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["TheScoutingBoy A.K.A. ScoutMC"],
+  "credits": "TheScoutingBoy for textures and coding!",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
