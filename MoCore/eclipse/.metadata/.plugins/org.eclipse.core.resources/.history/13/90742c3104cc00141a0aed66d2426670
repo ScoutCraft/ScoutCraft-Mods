@@ -1,0 +1,7 @@
+package com.thescoutingboy.mcm.item;
+
+import net.minecraft.item.Item;
+
+public class ItemInfusionTool extends Item {
+
+}

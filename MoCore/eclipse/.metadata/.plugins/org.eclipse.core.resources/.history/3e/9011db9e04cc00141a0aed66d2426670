@@ -1,0 +1,29 @@
+package com.thescoutingboy.mcm.item;
+
+import net.minecraft.item.Item;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+
+public class ItemManger {
+	
+	
+	//Making Items
+	
+	public static Item InfusionTool;
+	
+	//Register Items
+	
+	public static void registerItems() {
+		
+		GameRegistry.registerItem(InfusionTool, "InfusionTool");
+		
+	}
+	
+	//Define Items
+	
+	public static void defineItems() {
+		
+		InfusionTool = new ItemInfusionTool();
+		
+	}
+
+}

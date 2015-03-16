@@ -1,0 +1,17 @@
+package com.thescoutingboy.mcm.item;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+public class ItemInfusionTool extends Item {
+	
+	public ItemInfusionTool() {
+		
+		super();
+		setCreativeTab(CreativeTabs.tabTools);
+		setUnlocalizedName("InfusionTool");
+		setMaxStackSize(16);
+		
+	}
+
+}

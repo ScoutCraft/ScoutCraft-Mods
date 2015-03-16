@@ -1,0 +1,21 @@
+package com.thescoutingboy.mcm.item;
+
+public class ItemManger {
+	
+	//Register Items
+	
+	public static void registerItems() {
+		
+		
+		
+	}
+	
+	//Define Items
+	
+	public static void defineItems() {
+		
+		
+		
+	}
+
+}

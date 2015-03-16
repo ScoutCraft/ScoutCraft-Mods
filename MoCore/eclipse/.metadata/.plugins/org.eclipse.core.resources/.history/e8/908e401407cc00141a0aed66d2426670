@@ -1,0 +1,19 @@
+package com.thescoutingboy.texture;
+
+public class TextureManager {
+	
+	//Register Item & Block's Textures
+	
+	public static void registerItemTextures() {
+		
+		
+		
+	}
+	
+	public static void registerBlockTextures() {
+		
+		
+		
+	}
+
+}

@@ -7,35 +7,51 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-import com.thescoutingboy.mcm.init.MCM_Items;
+import com.thescoutingboy.mcm.item.ItemManager;
 import com.thescoutingboy.mcm.proxy.CommonProxy;
 import com.thescoutingboy.mcm.refstrings.RefStrings;
+import com.thescoutingboy.texture.TextureManager;
 
 @Mod(modid = RefStrings.MOD_ID, name = RefStrings.NAME, version = RefStrings.VERSION)
 public class MCM {
 	
 	//Proxy
-	@SidedProxy(clientSide = RefStrings.CLIENT_PROXY_CLASS, serverSide = RefStrings.SERVER_PROXY_CLASS)
+	
+	@SidedProxy(clientSide="com.thescoutingboy.mcm.proxy.ClientProxy", serverSide="com.thescoutingboy.mcm.proxy.CommonProxy")
 	public static CommonProxy proxy;
 	
+	public MCM() {
+		
+		
+		
+	}
+	
 	//EventHandlers
+	
 	@EventHandler
-	public void preInit(FMLPreInitializationEvent event) {
+	public static void init(FMLInitializationEvent event) {
 		
-		MCM_Items.init();
-		MCM_Items.register();
+		//Item Registry
+		
+		ItemManager.defineItems();
+		ItemManager.registerItems();
+		
+		//Texture Registry
+		
+		TextureManager.registerBlockTextures();
+		TextureManager.registerItemTextures();
 		
 	}
 	
 	@EventHandler
-	public void init(FMLInitializationEvent event) {
+	public static void preInit(FMLPreInitializationEvent event) {
 		
-		proxy.registerRenders();
+		
 		
 	}
 	
 	@EventHandler
-	public void postInit(FMLPostInitializationEvent event) {
+	public static void postInit(FMLPostInitializationEvent event) {
 		
 		
 		

@@ -1,0 +1,11 @@
+package com.thescoutingboy.mcm.item;
+
+public class ItemManger {
+	
+	public static void registerItems() {
+		
+		
+		
+	}
+
+}
